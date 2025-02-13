@@ -2,8 +2,17 @@
 .container-fluid {
   background-color: green;
   padding: 20px;
+  padding-bottom: 125px;
 }
 .card {
-  justify-content: center;
-  padding-bottom: 40px;
+  margin-left: 500px;
+  margin-right: 500px;
+  padding: 30px;
+  border-radius: 20px;
+}
+.card-center {
+  text-align: center;
+}
+.bottom-right {
+  text-align: right;
 }

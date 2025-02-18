@@ -15,4 +15,11 @@
 }
 .bottom-right {
   text-align: right;
+  font-size: 75px;
+}
+.top-left {
+  font-size: 75px;
+}
+h1 {
+  font-size: 75px;
 }

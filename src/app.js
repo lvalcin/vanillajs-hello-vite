@@ -31,6 +31,7 @@ window.onload = function() {
   let topSuit = document.querySelector(".top-left");
   console.log("topsuit", topSuit);
   console.log("randomSuit", randomSuit);
+
   let bottomSuit = document.querySelector(".bottom-right");
   topSuit.innerHTML = randomSuit;
 };

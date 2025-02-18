@@ -33,4 +33,21 @@ window.onload = function() {
 
   let cardNumber = document.querySelector(".card-center");
   cardNumber.innerHTML = randomCard;
+
+  // let cardSuit = ["♦", "♥", "♠", "♣"
+  // cardSuit.forEach()=>{
+
+  let cardSuitLeft = document.querySelector(".top-left");
+  if (randomSuit === "♦" || randomSuit === "♥") {
+    cardSuitLeft.style.color = "red";
+  } else {
+    cardSuitLeft.style.color = "black";
+  }
+
+  let cardSuitRight = document.querySelector(".bottom-right");
+  if (randomSuit === "♦" || randomSuit === "♥") {
+    cardSuitRight.style.color = "red";
+  } else {
+    cardSuitRight.style.color = "black";
+  }
 };

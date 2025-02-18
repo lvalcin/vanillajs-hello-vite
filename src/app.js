@@ -4,6 +4,9 @@ import "./style.css";
 
 window.onload = function() {
   let suitArray = ["♦", "♥", "♠", "♣"];
+  let suitIndex = Math.floor(Math.random() * 3);
+  let randomSuit = suitArray[suitIndex];
+
   let cardArray = [
     "A",
     "2",
@@ -19,19 +22,15 @@ window.onload = function() {
     "Q",
     "K"
   ];
-
-  let suitIndex = Math.floor(Math.random() * 3);
   let cardIndex = Math.floor(Math.random() * 12);
-
-  let randomSuit = suitArray[suitIndex];
   let randomCard = cardArray[cardIndex];
 
-  console.log(suitIndex);
-
   let topSuit = document.querySelector(".top-left");
-  console.log("topsuit", topSuit);
-  console.log("randomSuit", randomSuit);
+  topSuit.innerHTML = randomSuit;
 
   let bottomSuit = document.querySelector(".bottom-right");
-  topSuit.innerHTML = randomSuit;
+  bottomSuit.innerHTML = randomSuit;
+
+  let cardNumber = document.querySelector(".card-center");
+  cardNumber.innerHTML = randomCard;
 };
